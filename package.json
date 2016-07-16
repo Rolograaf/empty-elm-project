@@ -1,0 +1,17 @@
+{
+  "name": "elm-init",
+  "version": "1.0.0",
+  "description": "Basic setup for elm project with watcher",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "elm make src/Main.elm --output lib/index.js",
+    "watch": "chokidar \"src/**/*.elm\" -c \"npm run build\" --initial",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VKobeliatsky",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "elm": "^0.17.1"
+  }
+}
